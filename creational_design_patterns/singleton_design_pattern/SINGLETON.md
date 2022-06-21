@@ -24,12 +24,25 @@ In software engineering, creational design patterns are design patterns that dea
 here today we talk about `Singleton Design pattern`
 
 ## Singleton Design Pattern
-Ensure a class has only one instance, and provide a global point of access to it.
-Encapsulated "just-in-time initialization" or "initialization on first use".
+The singleton design pattern restricts the instantiation of a class to a single instance. This is done in order to provide coordinated access to a certain resource, throughout an entire software system. Through this design pattern, the singleton class ensures that it’s only instantiated once, and can provide easy access to the single instance.
 
-### Example of Usage
+* Common use-cases for the singleton design pattern include factories, builders, and objects that hold program state. 
+* Ensure a class has only one instance, and provide a global point of access to it.
+* Encapsulated "just-in-time initialization" or "initialization on first use".
+
+### Usage
+* Singletons are sometimes considered to be an alternative to global variables or static classes.
+* Common use-cases for the singleton design pattern include factories, builders, and objects that hold program state.
+
+Compared to global variables, singletons have the following benefits:
+
+* Singleton instance fields don’t take up space in the global namespace
+* Singletons may be lazily initialized (to be discussed further)
+
+#### Examples
 1. Redux
 2. Cache
 3. Constant
 4. Setting Config
 5. Loging
+
